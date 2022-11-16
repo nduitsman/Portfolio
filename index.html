@@ -1,31 +1,228 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/styles.css">
-        <script src="/script.js" defer></script>
-    </head>
-    <body>
-        <div id="homeContainer">
-            <div class='navContainer'>
-                <p class="nick homeLink">nick</p>
-                <p class="duitsman homeLink">duitsman</p>
-                <a href='https://docs.google.com/document/d/14rJ6KjmVJkyvwfzlPp12f-QRIhoyI3y5Q5DTfszEIbA/edit?usp=sharing'><p class="resume homeLink" data-text="resume" id="horiz">resume</p></a>
-                <a href ="" ><p data-text="contact" id="vert" class="contact homeLink">contact</p></a>
-                <a href ="" ><p data-text="about" id="vert" class="about homeLink">about</p></a>
-                <a href='https://github.com/nduitsman'><p class="github homeLink" data-text="github" id="horiz">github</p></a>
-                <a href ="https://codepen.io/your-work" ><p data-text="goals" id="horiz" class="goals homeLink">goals</p></a>
-                <a href ="" ><p data-text="experience" id="vert" class="experience homeLink">experience</p></a>
-                <a href='https://github.com/nduitsman'><p class="future homeLink" data-text="future" id="horiz">future</p></a>
-                <a href="" ><p data-text="projects" id="vert" class="projects homeLink">projects</p></a>
-                <a href='https://codepen.io/your-work'><p class="codepen homeLink" data-text="codepen" id="horiz">codepen</p></a>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" defer></script>
+</head>
+
+<body>
+    <div id="homeContainer">
+        <div class='navContainer'>
+            <p class="nick homeLink">nick</p>
+            <p class="duitsman homeLink">duitsman</p>
+            <a href='https://docs.google.com/document/d/14rJ6KjmVJkyvwfzlPp12f-QRIhoyI3y5Q5DTfszEIbA/edit?usp=sharing'>
+                <p class="resume homeLink" data-text="resume" id="horiz">resume</p>
+            </a>
+            <a href="#contactContainer">
+                <p data-text="contact" id="vert" class="contact homeLink">contact</p>
+            </a>
+            <a href="#aboutContainer">
+                <p data-text="about" id="vert" class="about homeLink">about</p>
+            </a>
+            <a href='https://github.com/nduitsman'>
+                <p class="github homeLink" data-text="github" id="horiz">github</p>
+            </a>
+            <a href="#goalsExpContainer">
+                <p data-text="goals" id="horiz" class="goals homeLink">goals</p>
+            </a>
+            <a href="#goalsExpContainer">
+                <p data-text="experience" id="vert" class="experience homeLink">experience</p>
+            </a>
+            <a href="#projectsContainer">
+                <p data-text="projects" id="vert" class="projects homeLink">projects</p>
+            </a>
+            <a href='https://codepen.io/your-work'>
+                <p class="codepen homeLink" data-text="codepen" id="horiz">codepen</p>
+            </a>
+        </div>
+        <div id="profilePhoto">
+            <img src="https://avatars.githubusercontent.com/u/109879521?v=4">
+        </div>
+    </div>
+    <hr class="hr1">
+    <hr class="hr2">
+    <hr class="hr3">
+    <hr class="hr4">
+    <hr class="hr5">
+    <div id="aboutContainer">
+        <div class="contentWrapper">
+            <h1 class="sectionHeader">About Me</h1>
+            <h2 class='aboutContent'>Hi! I am Nick Duitsman, a fullstack developer.</h2>
+            <p class="normalText aboutContent">
+                As a recent career pivot from electrical and computer engineering, and an Army veteran, I have shifted to something that I love... software engineering! Much of my recent experience in programming stemmed from writing scripts in Python and C++ at my previous job. For once, I actually enjoyed what I was doing; so I decided to lean into it and see where this new direction will take me.
+            </p>
+            <p class="normalText aboutContent">
+                I just finished a 3 month 480 hour bootcamp from General Assembly, which has provided me the essential
+                building blocks for a new and rewarding career.
+            </p>
+        </div>
+    </div>
+    <hr class="hr1">
+    <hr class="hr2">
+    <hr class="hr3">
+    <hr class="hr4">
+    <hr class="hr5">
+    <div id="projectsContainer">
+        <h1 class="sectionHeader">Projects</h1>
+        <div class="projectWrapper">
+            <div>
+                <img class='projectPreview' src="https://user-images.githubusercontent.com/108159910/191875985-c0817a66-5cce-4df3-aa99-59dc30b49ad9.gif">
             </div>
-            <div id="profilePhoto">
-                <img src="https://avatars.githubusercontent.com/u/109879521?v=4">
+            <div>
+                <h2 class="projectTitleRight">
+                    Netflix Reimagined
+                </h2>
+                <p class="normalTextRight">
+                    Netflix Clone but with UI/UX inspired by Jurre Houtkamp & Serge Strokov. Utilized a MERN stack to build a full stack application in 1 week with de-coupled React frontend and Express backend.
+                </p>
+                <div class='techListRight'>
+                    <p class='normalText techItems'>
+                        React
+                    </p>
+                    <p class='normalText techItems'>
+                        Express
+                    </p>
+                    <p class='normalText techItems'>
+                        Redux
+                    </p>
+                    <p class='normalText techItemsLast'>
+                        4 APIs
+                    </p>
+                </div>
+                <div class="projectLinksRight">
+                    <a href='https://github.com/nduitsman/Netflix-Reimaged'><img src="./iconmonstr-github-1-240.png"></a>
+                    <a href='https://netflixreimagined.netlify.app/'><img src="./icons8-export-50.png"></a>
+                </div>
             </div>
         </div>
-    </body>
+        <div class="projectWrapper">
+            <div>
+                <h2 class="projectTitleLeft">
+                    Checkers
+                </h2>
+                <p class="normalText">
+                    This is the classic game of Checkers. Players win by removing the opponents pieces. To assist those whom are unfamiliar with the rules, tiles will be highlighted indicating valid move locations.
+                </p>
+                <div class='techList'>
+                    <p class='normalText techItems'>
+                        HTML
+                    </p>
+                    <p class='normalText techItems'>
+                        CSS
+                    </p>
+                    <p class='normalText techItemsLast'>
+                        JavaScript
+                    </p>
+                </div>
+                <div class="projectLinksLeft">
+                    <a href='https://github.com/nduitsman/Checkers-Project1'><img src="./iconmonstr-github-1-240.png"></a>
+                    <a href='https://nduitsman.github.io/Checkers-Project1/'><img src="./icons8-export-50.png"></a>
+                </div>
+            </div>
+            <div>
+                <img  class='projectPreview' src="https://user-images.githubusercontent.com/109879521/184163803-985ba939-673a-4892-acaa-0f0168729b16.png">
+            </div>
+        </div>
+        <div class="projectWrapper">
+            <div>
+                <img  class='projectPreview' src="https://user-images.githubusercontent.com/9807461/187937738-20c121ce-5e08-48c7-97d6-bec5860c2982.png">
+            </div>
+            <div>
+                <h2 class="projectTitleRight">
+                    RenditionReddit
+                </h2>
+                <p class="normalTextRight">
+                    This site is a reverse engineered version of the well known site Reddit. The site provides users the ability to view posts made by other users with or without login. Once a user logs in, they are allowed to create posts and make comments.
+                </p>
+                <div class='techListRight'>
+                    <p class='normalText techItems'>
+                        Mongoose
+                    </p>
+                    <p class='normalText techItems'>
+                        MongoDB
+                    </p>
+                    <p class='normalText techItems'>
+                        Express
+                    </p>
+                    <p class='normalText techItemsLast'>
+                        HTML+CSS
+                    </p>
+                </div>
+                <div class="projectLinksRight">
+                    <a hre='https://github.com/nduitsman/ReinditionReddit'><img src="./iconmonstr-github-1-240.png"></a>
+                    <a href='https://renditionreddit.herokuapp.com'><img src="./icons8-export-50.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="projectWrapper">
+            <div>
+                <h2 class="projectTitleLeft">
+                    Bid On Me
+                </h2>
+                <p class="normalText">
+                    Bit-on-me is an app designed to sync up customers to companies without the annoying frequency of calls that resulted from a service inquiry. Companies or bidders, review the customer posting, and are able to propose a counter offer.
+                </p>
+                <div class='techList'>
+                    <p class='normalText techItems'>
+                        Django
+                    </p>
+                    <p class='normalText techItems'>
+                        Python
+                    </p>
+                    <p class='normalText techItemsLast'>
+                        HTML+CSS
+                    </p>
+                </div>
+                <div class="projectLinksLeft">
+                    <a href='https://github.com/nduitsman/Bid-on-me'><img src="./iconmonstr-github-1-240.png"></a>
+                    <a href='https://bid-on-me.herokuapp.com/'><img src="./icons8-export-50.png"></a>
+                </div>
+            </div>
+            <div>
+                <img  class='projectPreview' src="https://user-images.githubusercontent.com/109879521/195927066-502b8402-a1f1-4a47-8c81-3026746b01fd.png">
+            </div>
+        </div>
+    </div>
+    <hr class="hr1">
+    <hr class="hr2">
+    <hr class="hr3">
+    <hr class="hr4">
+    <hr class="hr5">
+    <div id="goalsExpContainer">
+        <div class="contentWrapper">
+            <h1 class="sectionHeader">Goals & Experience</h1>
+            <p class="normalText">
+                As stated in my resume, under 'Education', I have redirected my career path from electrical and computer engineering to full stack software engineering.  Skills focused on JavaScript, HTML/CSS, React, Django, REST, NODEJS, and more!
+                <br><br>
+                With 8+ years of management and leadership skills alongside 3+ years in a technical engineering role, including me on your team will help maintain your incredible reputation, and push it to greater heights in the future. As an avid and passionate believer in the ever increasing demand and necessity for cleaner and more responsive software, the only direction we can go is up!
+                <br><br>
+                To view my resume, click <a href='https://docs.google.com/document/d/14rJ6KjmVJkyvwfzlPp12f-QRIhoyI3y5Q5DTfszEIbA/edit?usp=sharing'id='resumeLink'>HERE!</a>
+            </p>
+        </div>
+    </div>
+    <hr class="hr1">
+    <hr class="hr2">
+    <hr class="hr3">
+    <hr class="hr4">
+    <hr class="hr5">
+    <div id="contactContainer">
+        <div class="contentWrapper">
+            <h1 class="sectionHeader">Contact</h1>
+            <p class="textCenter">
+                If you wish to get in contact with me, please reach out via email: 
+                <br>
+                nduitsman@gmail.com 
+                <br><br>or LinkedIn: 
+                <br>
+                <a href='https://www.linkedin.com/in/nicholas-duitsman/' id="linkedInLink">in/nicholas-duitsman</a>
+            </p>
+        </div>
+    </div>
+</body>
+
 </html>

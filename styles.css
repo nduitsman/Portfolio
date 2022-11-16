@@ -3,13 +3,15 @@
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: rgb(16,16,26);
     color: white;
+    scroll-behavior: smooth;
 }
 
 body {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    background-color: rgb(18,31,48);
 }
 .header {
     grid-column: 1 / span 3;
@@ -34,22 +36,132 @@ body {
     0% {opacity: 0}
     100% {opacity: 1}
 }
-#homeContainer {
+
+#homeContainer, #aboutContainer, #goalsExpContainer, #contactContainer {
     display: flex;
-    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+#aboutContainer {
+    animation: fade-in 2s linear;
+}
+#homeContainer, #aboutContainer, #goalsExpContainer, #contactContainer {
+    background-image: url(https://cdn.pixabay.com/photo/2016/08/31/17/02/blue-1634110_960_720.png);
+    background-size: cover;
+}
+#projectsContainer {
+    background-image: url(https://cdn.pixabay.com/photo/2016/08/31/17/02/blue-1634110_960_720.png);
+    background-size: 150vw 320vh;
+    background-position-x: -30vw;
+}
+
+.contentWrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.sectionHeader {
+    font-size: 5rem;
+    font-family:  'Fredoka One', cursive;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(200,200,200);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.6rem;
 }
 
 .navContainer {
     position: relative;
     width: 40em;
     height: 30em;
+    left: -6em;
+}
+
+#projectsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: rem;
+}
+
+.projectWrapper {
+    display: flex;
+    width: 75%;
+    margin: 1rem;
+    max-width: 80rem;
+}
+.projectWrapper img {
+    height: 20em;
+    width: 35em;
+    margin: 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.projectPreview {
+    transition: 0.3s;
+}
+.projectPreview:hover {
+    box-shadow: 1px 1px 20px 5px white;
+    transform: scale(1.3);
+}
+
+.techListRight {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: right;
+}
+.techList {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: left;
+}
+
+.techItems {
+    border-right: 2px solid red;   
+    padding: .5rem;
+}
+
+.techItemsLast {
+    padding: .5rem;
 }
 
 #profilePhoto img {
     border-radius: 50%;
-    /* animation: fade-in 4s ease; */
+    width: 90%;
+    border: 2px solid white;
+    animation: fade-in 3s linear;
 }
 
+.normalText {
+    font-size: 1.5rem;
+    color: rgb(200,200,200);
+    text-align: left;
+    text-shadow: 2px 2px 5px black;
+}
+
+.normalTextRight {
+    font-size: 1.5rem;
+    color: rgb(200,200,200);
+    text-align: right;
+    text-shadow: 2px 2px 5px black;
+}
+.textCenter {
+    font-size: 1.5rem;
+    color: rgb(200,200,200);
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+}
 ul {
     position: relative;
     display: flex;
@@ -89,11 +201,11 @@ ul li a:hover::before {
 }
 
 .homeLink {
-    font-size: 3em;
+    font-size: 3.5em;
     position: absolute;
     font-family:  'Fredoka One', cursive;
     color: transparent;
-    -webkit-text-stroke: 2px grey;
+    -webkit-text-stroke: 2px whitesmoke;
     display: grid;
     letter-spacing: 0.1em;
 }
@@ -169,7 +281,7 @@ p a {
     background-color: transparent;
 }
 .projects {
-    top: 4.3em;
+    top: 3.3em;
     left: 9em;
     writing-mode: vertical-lr;
     animation: slide-in-down 1.6s ease;
@@ -212,5 +324,57 @@ p a {
     overflow: hidden;
     transition: 0.5s;
     -webkit-text-stroke: 1px rgba(225,225,225,0.5);
-    
+}
+hr {
+    margin: auto;
+    height: 3px;
+    background-color: rgb(150,150,150);
+    border-radius: 40%;
+}
+.hr1 {
+    width: 100%;
+}
+.hr2 {
+    width: 80%;
+}
+.hr3 {
+    width: 60%;
+}
+.hr4 {
+    width: 30%;
+}
+.hr5 {
+    width: 10%;
+}
+.projectLinksRight img {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+}
+.projectLinksRight {
+    display: flex;
+    justify-content: right;
+}
+.projectLinksLeft img {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+}
+.projectLinksLeft {
+    display: flex;
+    justify-content: left;
+}
+.projectTitleRight {
+    text-align: right;
+    margin-right: 0;
+}
+.projectTitleLeft {
+    text-align: left;
+    margin-left: 0;
+}
+#resumeLink, #linkedInLink{
+    font-size: 2rem;
+    -webkit-text-stroke: none;
+    color: white;
+    text-shadow: 1px 1px 20px red;
 }
