@@ -436,4 +436,7 @@ hr {
         width: 95%;
         height: auto;
     }
+    .normalText {
+        font-size: 1rem;
+    }
 }
