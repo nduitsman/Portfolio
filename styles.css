@@ -12,10 +12,9 @@ body {
     justify-content: center;
     flex-direction: column;
     background-color: rgb(18,31,48);
+    width: 100vw;
 }
-.header {
-    grid-column: 1 / span 3;
-}
+
 @keyframes slide-in-right {
     0%  {transform: translateX(-500%)}
     100% {transform: translateX(0)}
@@ -48,9 +47,16 @@ body {
     height: 100vh;
     width: 100%;
 }
+
 #aboutContainer {
     animation: fade-in 2s linear;
+    flex-direction: column;
 }
+/* 
+#aboutContainer .contentWrapper {
+    flex-direction: row;
+} */
+
 #homeContainer, #aboutContainer, #goalsExpContainer, #contactContainer {
     background-image: url(https://cdn.pixabay.com/photo/2016/08/31/17/02/blue-1634110_960_720.png);
     background-size: cover;
@@ -62,7 +68,7 @@ body {
 }
 
 .contentWrapper {
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -101,7 +107,7 @@ h2 {
 
 .projectWrapper {
     display: flex;
-    width: 75%;
+    width: 85%;
     margin: 1rem;
     max-width: 80rem;
 }
@@ -142,11 +148,13 @@ h2 {
 
 #profilePhoto {
     border-radius: 50%;
+    width: 20%;
     aspect-ratio: 1/1;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: .5em;
+    margin-right: 2em;
     position: relative;
 }
 
@@ -399,4 +407,33 @@ hr {
     -webkit-text-stroke: none;
     color: white;
     text-shadow: 1px 1px 20px red;
+}
+
+@media only screen and (max-width: 800px){
+    #homeContainer, #aboutContainer, #goalsExpContainer, #contactContainer {
+        height: 100vh;
+        width: 100%;
+    }
+    .contentWrapper {
+        width: 80%;
+        padding-bottom: 1rem;
+    }
+    .sectionHeader {
+        font-size: 3rem;
+        margin: 1rem;
+    }
+    .navContainer p {
+        font-size: 2.3rem;
+    }
+    .navContainer {
+        margin: 50% 10% 0% 10%;
+    }
+    .projectWrapper {
+        flex-direction: column;
+        width: 95%;
+    }
+    img.projectPreview {
+        width: 95%;
+        height: auto;
+    }
 }
