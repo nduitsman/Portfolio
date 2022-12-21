@@ -411,7 +411,7 @@ hr {
 
 @media only screen and (max-width: 800px){
     #homeContainer, #aboutContainer, #goalsExpContainer, #contactContainer {
-        height: 100vh;
+        height: fit-content;
         width: 100%;
     }
     .contentWrapper {
@@ -426,7 +426,7 @@ hr {
         font-size: 2.3rem;
     }
     .navContainer {
-        margin: 50% 10% 0% 10%;
+        margin: 40% 5% 0% 5%;
     }
     .projectWrapper {
         flex-direction: column;
